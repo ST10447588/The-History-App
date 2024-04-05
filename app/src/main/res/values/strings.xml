@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application Ages</string>
+    <string name="please_enter_your_age">Please enter your age</string>
+    <string name="enter_age">Enter Age:</string>
+    <string name="the_history_app">The History App</string>
+    <string name="generate_history">Generate history</string>
+    <string name="clear">Clear</string>
+    <string name="result">Result</string>
+    <string name="tvEnterAge">tvEnterAge\n</string>
+    <string name="enterage">EnterAge</string>
+</resources>

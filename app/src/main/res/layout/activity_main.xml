@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvheading"
+        android:layout_width="179dp"
+        android:layout_height="125dp"
+        android:fontFamily="@font/bahiana"
+        android:gravity="center"
+        android:text="@string/the_history_app"
+        android:textColor="#FF5722"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/tvEnterAge"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:fontFamily="@font/bahiana"
+        android:gravity="center"
+        android:text="@string/enterage"
+        android:textColor="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <Button
+        android:id="@+id/GenerateHistory"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/bahiana"
+        android:text="@string/generate_history"
+        android:textColorLink="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Clear"
+        android:layout_width="93dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/bahiana"
+        android:text="@string/clear"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GenerateHistory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="227dp"
+        android:layout_height="117dp"
+        android:fontFamily="@font/bahiana"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="249dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:fontFamily="@font/bahiana"
+        android:hint="@string/please_enter_your_age"
+        android:inputType="number"
+        android:textColorHint="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/GenerateHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvEnterAge"
+        app:layout_constraintTop_toBottomOf="@+id/tvheading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
